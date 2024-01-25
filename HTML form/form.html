@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Information Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="myForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female</label>
+
+            <label>Choice of Food (Select at least 2):</label>
+            <div class="food-options">
+                <input type="checkbox" id="pizza" name="food" value="pizza">
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" id="burger" name="food" value="burger">
+                <label for="burger">Burger</label>
+                <input type="checkbox" id="pasta" name="food" value="pasta">
+                <label for="pasta">Pasta</label>
+                <input type="checkbox" id="salad" name="food" value="salad">
+                <label for="salad">Salad</label>
+                <input type="checkbox" id="sushi" name="food" value="sushi">
+                <label for="sushi">Sushi</label>
+                <input type="checkbox" id="iceCream" name="food" value="iceCream">
+                <label for="iceCream">Ice Cream</label>
+            </div>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
